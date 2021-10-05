@@ -28,13 +28,13 @@ http
       });
     } else if (req.method == "GET") {
       res.writeHead(200, { "Content-Type": "text/plain" });
-      res.end("Discord Bot is active now\n");
+      res.end("Discord Bot is Oprateing!");
     }
   })
   .listen(3000);
 
 client.on("ready", message => {
-  console.log("Bot準備完了～");
+  console.log("Bot準備完了！");
 });
 
 client.on("message", message =>{
