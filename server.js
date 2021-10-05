@@ -1,5 +1,5 @@
 const http = require("http");
-const querystring = require("querystring");
+const querystring = require("query-string");
 
 //GASでwakeさせること。
 
@@ -31,7 +31,7 @@ http
   })
   .listen(3000);
 
-if (process.env.DISCORD_BOT_TOKEN == undefined) {
+if (process.env.DISCORD_BOT_TOKEN == undefined || process.env.DISCORD_BOT_TOKEN == "") {
   console.log("DISCORD_BOT_TOKENを設定してください。");
   process.exit(0);
 }

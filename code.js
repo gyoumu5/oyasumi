@@ -1,5 +1,7 @@
-const discord = require("discord.js-12");
-const client = new discord.Client();
+const discord = require("discord.js");
+const {Intents, Client} = require("discord.js")
+const options = {intents:["GUILDS","GUILD_MESSAGES"]}
+const client = new Client(options);
 
 
 client.on("ready", message => {
@@ -8,7 +10,7 @@ client.on("ready", message => {
 
 //ここから
 
-client.on("message", message =>{
+client.on("messageCreate", message =>{
   if (message.content === "hello."){
     message.channel.send(`hello! ${message.author}`)
   }

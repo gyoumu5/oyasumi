@@ -7,11 +7,11 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "querystring": "^0.2.1",
-    "discord.js-12": "^1.0.2"
+    "discord.js": "^13.1.0",
+    "query-string": "^7.0.1"
   },
   "engines": {
-    "node": "12.x"
+    "node": "16.x"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/discord-js-v12-template-glitch"
