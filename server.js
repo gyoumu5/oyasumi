@@ -1,7 +1,5 @@
 const http = require("http");
 const querystring = require("querystring");
-const discord = require("discord.js-12");
-const client = new discord.Client();
 
 //GASでwakeさせること。
 
@@ -33,19 +31,9 @@ http
   })
   .listen(3000);
 
-client.on("ready", message => {
-  console.log("Bot準備完了！");
-});
-
-client.on("message", message =>{
-  if (message.content === "hello."){
-    message.channel.send(`hello! ${message.author}`)
-  }
-})
-
 if (process.env.DISCORD_BOT_TOKEN == undefined) {
   console.log("DISCORD_BOT_TOKENを設定してください。");
   process.exit(0);
 }
 
-client.login(process.env.DISCORD_BOT_TOKEN);
+require("./code.js")
