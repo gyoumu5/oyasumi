@@ -6,4 +6,4 @@
 
 ③「Share」をクリックして「Live Site」のURLをコピーし、GASのスクリプトに貼り付けて定期的にwakeさせてください。
 
-※何か追加する場合Gateway Intentsの設定が必要な可能性があります。
+※何か追加する場合、Gateway Intentsの設定が必要な可能性があります。

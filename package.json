@@ -1,22 +1,21 @@
 {
-  "name": "Discord-js-v12-template-for-glitch",
-  "version": "12.0.0",
-  "description": "It is Discord.js v12 template.",
+  "name": "Discord-js-v13-template-for-glitch",
+  "version": "13",
+  "description": "It is Discord.js v13 template.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "discord.js": "^13.1.0",
-    "query-string": "^7.0.1"
+    "discord.js": "^13.6.0",
+    "query-string": "^7.1.1"
   },
   "engines": {
     "node": "16.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/discord-js-v12-template-glitch"
+    "url": "https://glitch.com/edit/#!/discord-js-v13-template-glitch"
   },
-  "license": "MIT",
   "keywords": [
     "node",
     "glitch",

@@ -1,5 +1,4 @@
-const discord = require("discord.js");
-const {Intents, Client} = require("discord.js")
+const {Client} = require("discord.js")
 const options = {intents:["GUILDS","GUILD_MESSAGES"]}
 const client = new Client(options);
 
