@@ -7,7 +7,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "discord.js": "^latest",
+    "discord.js": "latest",
     "query-string": "^7.1.1"
   },
   "engines": {
