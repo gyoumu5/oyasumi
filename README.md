@@ -1,6 +1,6 @@
 〜使い方〜
 
-1. envのDISCORD_BOT_TOKENにBOTのトークンを入れてください。
+1. 「.env」のDISCORD_BOT_TOKENにBOTのトークンを入れてください。
 
 2. server.jsは触らず、code.jsの指定範囲でコーディングしましょう。
 
