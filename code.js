@@ -39,59 +39,59 @@ client.on('message', message =>{
 　    let reply_text = `${message.content}`;
       client.channels.cache.get('1077446838006857729').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
     }
-    if (message.content.match("menber")){　//AまたはBというキーワードでBOTを稼働させたい
+    if (message.content.match("menber4")){　//AまたはBというキーワードでBOTを稼働させたい
     　let channel = message.channel;
 　    let author = message.author.username;
 　    let reply_text = `${message.content}`;
-      client.channels.cache.get('').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
+      client.channels.cache.get('1077446992298528819').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
     }
-    if (message.content.match("menber")){　//AまたはBというキーワードでBOTを稼働させたい
+    if (message.content.match("menber5")){　//AまたはBというキーワードでBOTを稼働させたい
     　let channel = message.channel;
 　    let author = message.author.username;
 　    let reply_text = `${message.content}`;
-      client.channels.cache.get('').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
+      client.channels.cache.get('1077447071927373884').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
     }
-    if (message.content.match("menber")){　//AまたはBというキーワードでBOTを稼働させたい
+    if (message.content.match("menber6")){　//AまたはBというキーワードでBOTを稼働させたい
     　let channel = message.channel;
 　    let author = message.author.username;
 　    let reply_text = `${message.content}`;
-      client.channels.cache.get('').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
+      client.channels.cache.get('1077446756255674479').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
     }
-    if (message.content.match("menber")){　//AまたはBというキーワードでBOTを稼働させたい
+    if (message.content.match("menber7")){　//AまたはBというキーワードでBOTを稼働させたい
     　let channel = message.channel;
 　    let author = message.author.username;
 　    let reply_text = `${message.content}`;
-      client.channels.cache.get('').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
+      client.channels.cache.get('1077447033687908362').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
     }
-    if (message.content.match("menber")){　//AまたはBというキーワードでBOTを稼働させたい
+    if (message.content.match("menber8")){　//AまたはBというキーワードでBOTを稼働させたい
     　let channel = message.channel;
 　    let author = message.author.username;
 　    let reply_text = `${message.content}`;
-      client.channels.cache.get('').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
+      client.channels.cache.get('1077444315774734438').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
     }
-    if (message.content.match("menber")){　//AまたはBというキーワードでBOTを稼働させたい
+    if (message.content.match("menber9")){　//AまたはBというキーワードでBOTを稼働させたい
     　let channel = message.channel;
 　    let author = message.author.username;
 　    let reply_text = `${message.content}`;
-      client.channels.cache.get('').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
+      client.channels.cache.get('1077446655965663253').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
     }
-    if (message.content.match("menber")){　//AまたはBというキーワードでBOTを稼働させたい
+    if (message.content.match("menber10")){　//AまたはBというキーワードでBOTを稼働させたい
     　let channel = message.channel;
 　    let author = message.author.username;
 　    let reply_text = `${message.content}`;
-      client.channels.cache.get('').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
+      client.channels.cache.get('1077446698185543791').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
     }
-    if (message.content.match("menber")){　//AまたはBというキーワードでBOTを稼働させたい
+    if (message.content.match("menber11")){　//AまたはBというキーワードでBOTを稼働させたい
     　let channel = message.channel;
 　    let author = message.author.username;
 　    let reply_text = `${message.content}`;
-      client.channels.cache.get('').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
+      client.channels.cache.get('1077447252349554719').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
     }
-    if (message.content.match("menber")){　//AまたはBというキーワードでBOTを稼働させたい
+    if (message.content.match("menber12")){　//AまたはBというキーワードでBOTを稼働させたい
     　let channel = message.channel;
 　    let author = message.author.username;
 　    let reply_text = `${message.content}`;
-      client.channels.cache.get('').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
+      client.channels.cache.get('1077445009160286288').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
     }
   return;
 });
