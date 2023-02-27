@@ -20,9 +20,12 @@ client.on('message', message =>{
   let member11 = "紅林寿樹"
   let member12 = "藤田勇"
   
+//  client.on('message', message =>{
+//  if (message.author.bot) return;
+
   //botのメッセージのみに反応して転送する
   if (message.author.id === client.user.id) return;//二重反応を防ぐ
-    if (message.author.bot) {
+    if (message.author.bot)
       if (message.content.match(member1)){　//AまたはBというキーワードでBOTを稼働させたい
        let channel = message.channel;
        let author = message.author.username;
@@ -95,7 +98,6 @@ client.on('message', message =>{
        let reply_text = `${message.content}`;
         client.channels.cache.get('1077445009160286288').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
       }
-    }
     return;
 });
 
