@@ -15,7 +15,7 @@ client.on('message', message =>{
   let member6 = "高林孝光"
   let member7 = "赤堀良明"
   let member8 = "宮﨑亮"
-  let member9 = "大石彰久"
+  let member9 = "坂上ケイチ"
   let member10 = "秋山雅貴"
   let member11 = "紅林寿樹"
   let member12 = "藤田勇"
@@ -36,7 +36,7 @@ client.on('message', message =>{
        let channel = message.channel;
        let author = message.author.username;
        let reply_text = `${message.content}`;
-        client.channels.cache.get('1077446792855175189').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい
+        client.channels.cache.get('1077447164218839122').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい
       }
       if (message.content.match(member3)){　//AまたはBというキーワードでBOTを稼働させたい
        let channel = message.channel;
