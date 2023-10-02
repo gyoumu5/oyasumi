@@ -78,7 +78,7 @@ client.on('message', message =>{
        let channel = message.channel;
        let author = message.author.username;
        let reply_text = `${message.content}`;
-        client.channels.cache.get('1077446655965663253').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
+        client.channels.cache.get('1077445009160286288').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
       }
       if (message.content.match(member10)){　//AまたはBというキーワードでBOTを稼働させたい
        let channel = message.channel;
