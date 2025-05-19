@@ -32,71 +32,11 @@ client.on('message', message =>{
        let reply_text = `${message.content}`;
         client.channels.cache.get('1077447164218839122').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい
       }
-/*      if (message.content.match(member2)){　//AまたはBというキーワードでBOTを稼働させたい
-       let channel = message.channel;
-       let author = message.author.username;
-       let reply_text = `${message.content}`;
-        client.channels.cache.get('1077447164218839122').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい
-      }
-*/      if (message.content.match(member3)){　//AまたはBというキーワードでBOTを稼働させたい
+      if (message.content.match(member3)){　//AまたはBというキーワードでBOTを稼働させたい
        let channel = message.channel;
        let author = message.author.username;
        let reply_text = `${message.content}`;
         client.channels.cache.get('1077446838006857729').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
-      }
-      if (message.content.match(member4)){　//AまたはBというキーワードでBOTを稼働させたい
-       let channel = message.channel;
-       let author = message.author.username;
-       let reply_text = `${message.content}`;
-        client.channels.cache.get('1077446992298528819').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
-      }
-      if (message.content.match(member5)){　//AまたはBというキーワードでBOTを稼働させたい
-       let channel = message.channel;
-       let author = message.author.username;
-       let reply_text = `${message.content}`;
-        client.channels.cache.get('1077447071927373884').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
-      }
-      if (message.content.match(member6)){　//AまたはBというキーワードでBOTを稼働させたい
-       let channel = message.channel;
-       let author = message.author.username;
-       let reply_text = `${message.content}`;
-        client.channels.cache.get('1077446756255674479').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
-      }
-      if (message.content.match(member7)){　//AまたはBというキーワードでBOTを稼働させたい
-       let channel = message.channel;
-       let author = message.author.username;
-       let reply_text = `${message.content}`;
-        client.channels.cache.get('1077447033687908362').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
-      }
-      if (message.content.match(member8)){　//AまたはBというキーワードでBOTを稼働させたい
-       let channel = message.channel;
-       let author = message.author.username;
-       let reply_text = `${message.content}`;
-        client.channels.cache.get('1077444315774734438').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
-      }
-/*      if (message.content.match(member9)){　//AまたはBというキーワードでBOTを稼働させたい
-       let channel = message.channel;
-       let author = message.author.username;
-       let reply_text = `${message.content}`;
-        client.channels.cache.get('1077445009160286288').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
-      }
-*/     if (message.content.match(member10)){　//AまたはBというキーワードでBOTを稼働させたい
-       let channel = message.channel;
-       let author = message.author.username;
-       let reply_text = `${message.content}`;
-        client.channels.cache.get('1077446698185543791').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
-      }
-      if (message.content.match(member11)){　//AまたはBというキーワードでBOTを稼働させたい
-       let channel = message.channel;
-       let author = message.author.username;
-       let reply_text = `${message.content}`;
-        client.channels.cache.get('1077447252349554719').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
-      }
-      if (message.content.match(member12)){　//AまたはBというキーワードでBOTを稼働させたい
-       let channel = message.channel;
-       let author = message.author.username;
-       let reply_text = `${message.content}`;
-        client.channels.cache.get('1077445009160286288').send(reply_text) //メッセージを取得したチャンネルとは別のチャンネルDに、発言ユーザーとメッセージABCの全文を送信したい    
       }
     return;
 });
