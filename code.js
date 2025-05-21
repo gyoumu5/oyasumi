@@ -2,10 +2,6 @@ const { Client } = require("discord.js");
 const options = { intents: ["GUILDS", "GUILD_MESSAGES"] };
 const client = new Client(options);
 
-client.on("ready", (message) => {
-  console.log("Bot準備完了！");
-});
-
 // キーワードと転送先チャンネル名を対応付けるマップ
 const keywordsToChannels = {
   "2印": "遅刻・欠勤連絡（印刷）",
@@ -48,6 +44,9 @@ client.on("messageCreate", async (message) => {
           // 転送
           await targetChannel.send(message.content);
           console.log(`キーワード "${keyword}" に反応して、メッセージを "${targetChannelName}" に転送しました。`);
+
+          // 転送元のメッセージにリアクションを付ける (ポテト絵文字)
+          await message.react("🍟");
         } else {
           console.error(`転送先チャンネル "${targetChannelName}" が見つかりませんでした。`);
         }
