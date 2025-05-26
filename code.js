@@ -26,11 +26,20 @@ client.on("ready", () => {
   console.log(`Bot準備完了！ ${client.user.tag} でログインしています。`);
 });
 
+// メッセージ作成時の処理
 client.on("messageCreate", async (message) => {
-  // ボットやシステムメッセージを無視
-  if (message.author.bot) return;
+  if (message.author.bot) return; // ボットやシステムメッセージを無視
+  handleMessage(message);
+});
 
-  // 書き込み用チャンネルをチェック
+// メッセージ編集時の処理
+client.on("messageUpdate", async (oldMessage, newMessage) => {
+  if (newMessage.author.bot) return; // ボットやシステムメッセージを無視
+  handleMessage(newMessage);
+});
+
+// メッセージを処理する共通関数
+async function handleMessage(message) {
   if (message.channel.name === sourceChannelName) {
     // メッセージ中にキーワードが含まれているか確認
     for (const [keyword, targetChannelName] of Object.entries(keywordsToChannels)) {
@@ -45,7 +54,7 @@ client.on("messageCreate", async (message) => {
           await targetChannel.send(message.content);
           console.log(`キーワード "${keyword}" に反応して、メッセージを "${targetChannelName}" に転送しました。`);
 
-          // 転送元のメッセージにリアクションを付ける (ポテト絵文字)
+          // 転送元のメッセージにリアクションを付ける (白い花絵文字)
           await message.react("🍟");
         } else {
           console.error(`転送先チャンネル "${targetChannelName}" が見つかりませんでした。`);
@@ -54,6 +63,6 @@ client.on("messageCreate", async (message) => {
       }
     }
   }
-});
+}
 
 client.login(process.env.DISCORD_BOT_TOKEN);
