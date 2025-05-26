@@ -1,5 +1,5 @@
 const { Client } = require("discord.js");
-const options = { intents: ["GUILDS", "GUILD_MESSAGES"] };
+const options = { intents: ["GUILDS", "GUILD_MESSAGES", "MESSAGE_CONTENT"] };
 const client = new Client(options);
 
 // キーワードと転送先チャンネル名を対応付けるマップ
