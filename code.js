@@ -29,12 +29,14 @@ client.on("ready", () => {
 // メッセージ作成時の処理
 client.on("messageCreate", async (message) => {
   if (message.author.bot) return; // ボットやシステムメッセージを無視
+  console.log(`[messageCreate] 編集されたメッセージを検出: ID=${message.id}, 内容="${message.content}"`);
   handleMessage(message);
 });
 
 // メッセージ編集時の処理
 client.on("messageUpdate", async (oldMessage, newMessage) => {
   if (newMessage.author.bot) return; // ボットやシステムメッセージを無視
+  console.log(`[messageUpdate] 編集されたメッセージを検出: ID=${newMessage.id}, 内容="${newMessage.content}"`);
   handleMessage(newMessage);
 });
 
