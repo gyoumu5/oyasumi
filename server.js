@@ -30,7 +30,7 @@ http
       res.end("Discord Bot is Operating!");
     }
   })
-  .listen(PORT);  // ここを修正！！必ずprocess.env.PORTで！
+  .listen(PORT,"0.0.0.0");  // ここを修正！！必ずprocess.env.PORTで！
 
 console.log(`HTTPサーバーがポート${PORT}で起動しました`);
 
