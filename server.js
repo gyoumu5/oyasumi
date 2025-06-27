@@ -33,6 +33,7 @@ http
   .listen(PORT,"0.0.0.0");  // ここを修正！！必ずprocess.env.PORTで！
 
 console.log(`HTTPサーバーがポート${PORT}で起動しました`);
+console.log(`process.env.PORT=${process.env.PORT}, Use PORT=${PORT}`);
 
 if (!process.env.DISCORD_BOT_TOKEN) {
   console.log("DISCORD_BOT_TOKENを設定してください。");
