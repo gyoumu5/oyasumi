@@ -1,6 +1,10 @@
-const { Client } = require("discord.js");
-const options = { intents: ["GUILDS", "GUILD_MESSAGES", "MESSAGE_CONTENT"] };
-const client = new Client(options);
+const { Client, Intents } = require('discord.js');
+const client = new Client({
+  intents: [
+    Intents.FLAGS.GUILDS,
+    Intents.FLAGS.GUILD_MESSAGES
+  ]
+});
 
 // キーワードと転送先チャンネル名を対応付けるマップ
 const keywordsToChannels = {
