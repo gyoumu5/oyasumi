@@ -33,19 +33,19 @@ console.log(`Bot準備完了！ ${client.user.tag} でログインしていま�
 // メッセージ作成時の処理
 client.on("messageCreate", async (message) => {
 if (message.author.bot) return; // ボットやシステムメッセージを無視
-console.log(
-`[messageCreate] 編集されたメッセージを検出: ID=${message.id}, 内容="${message.content}"`
-);
-handleMessage(message);
+  if (message.channel.name === sourceChannelName) {
+    console.log(`[messageCreate] メッセージ受信: ID=${message.id}, 内容="${message.content}"`);
+    handleMessage(message);
+  }
 });
 
 // メッセージ編集時の処理
 client.on("messageUpdate", async (oldMessage, newMessage) => {
 if (newMessage.author.bot) return; // ボットやシステムメッセージを無視
-console.log(
-`[messageUpdate] 編集されたメッセージを検出: ID=${newMessage.id}, 内容="${newMessage.content}"`
-);
-handleMessage(newMessage);
+  if (newMessage.channel.name === sourceChannelName) {
+    console.log(`[messageUpdate] メッセージ編集検出: ID=${newMessage.id}, 内容="${newMessage.content}"`);
+    handleMessage(newMessage);
+  }
 });
 
 // メッセージを処理する共通関数
