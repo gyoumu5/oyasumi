@@ -6,6 +6,12 @@ const client = new Client({
   ]
 });
 
+console.log('Bot起動処理開始');
+
+client.login(process.env.DISCORD_BOT_TOKEN).catch(err => {
+  console.error('Discordログインエラー:', err);
+});
+
 // キーワードと転送先チャンネル名を対応付けるマップ
 const keywordsToChannels = {
 "2印": "遅刻・欠勤連絡（印刷）",
