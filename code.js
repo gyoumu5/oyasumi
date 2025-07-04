@@ -11,6 +11,12 @@ console.log("DISCORD_BOT_TOKEN:", process.env.DISCORD_BOT_TOKEN);
 
 console.log('code.js処理開始');
 
+client.on("debug", (info) => {
+  console.log("💬 [DEBUG]", info);
+});
+client.on("error", (error) => {
+  console.error("❗ [Client Error]", error);
+});
 
 
 // キーワードと転送先チャンネル名を対応付けるマップ
