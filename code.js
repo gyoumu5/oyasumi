@@ -98,8 +98,13 @@ break; // 一致した時点で後続チェックを停止
 */
 console.log('Log4');
 
-client.login(process.env.DISCORD_BOT_TOKEN).then(() => {
-  console.log('Discordログイン成功');
-}).catch((err) => {
-  console.error('Discordログイン失敗:', err);
-});
+(async () => {
+  try {
+    console.log('🔄 Discordログイン処理開始');
+    await client.login(process.env.DISCORD_BOT_TOKEN);
+    console.log(`✅ Discordログイン成功: ${client.user.tag}`);
+  } catch (err) {
+    console.error('❌ Discordログイン失敗:', err);
+  }
+})();
+
