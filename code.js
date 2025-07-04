@@ -7,17 +7,17 @@ const client = new Client({
   ]
 });
 
-console.log("DISCORD_BOT_TOKEN:", process.env.DISCORD_BOT_TOKEN);
+//console.log("DISCORD_BOT_TOKEN:", process.env.DISCORD_BOT_TOKEN);
 
 console.log('code.js処理開始');
-
+/*
 client.on("debug", (info) => {
   console.log("💬 [DEBUG]", info);
 });
 client.on("error", (error) => {
   console.error("❗ [Client Error]", error);
 });
-
+*/
 
 // キーワードと転送先チャンネル名を対応付けるマップ
 const keywordsToChannels = {
@@ -46,7 +46,7 @@ console.log(`Bot準備完了！ ${client.user.tag} でログインしていま�
 });
 
 console.log('Log1');
-/*
+
 // メッセージ作成時の処理
 client.on("messageCreate", async (message) => {
 if (message.author.bot) return; // ボットやシステムメッセージを無視
@@ -101,23 +101,13 @@ break; // 一致した時点で後続チェックを停止
 }
 }
 }
-*/
+
 console.log('Log4');
-console.log("✅ BOT TOKENの長さ:", process.env.DISCORD_BOT_TOKEN?.length);
+//console.log("✅ BOT TOKENの長さ:", process.env.DISCORD_BOT_TOKEN?.length);
 
-(async () => {
-  try {
-    console.log('🔄 Discordログイン処理開始');
-    const token = process.env.DISCORD_BOT_TOKEN;
-
-    if (!token || token.length < 10) {
-      throw new Error("❌ トークンが短すぎるか未設定");
-    }
-
-    await client.login(token);
-    console.log(`✅ Discordログイン成功: ${client.user.tag}`);
-  } catch (err) {
-    console.error('❌ Discordログイン失敗:', err);
-  }
-})();
+client.login(process.env.DISCORD_BOT_TOKEN).then(() => {
+  console.log('Discordログイン成功');
+}).catch((err) => {
+  console.error('Discordログイン失敗:', err);
+});
 
