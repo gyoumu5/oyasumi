@@ -42,3 +42,4 @@ if (!process.env.DISCORD_BOT_TOKEN) {
 }
 
 require("./code.js");
+console.log('code.js モジュール読み込み完了');
