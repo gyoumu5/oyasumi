@@ -8,9 +8,12 @@ const client = new Client({
 
 console.log('code.js処理開始');
 
-client.login(process.env.DISCORD_BOT_TOKEN).catch(err => {
-  console.error('Discordログインエラー:', err);
+client.login(process.env.DISCORD_BOT_TOKEN).then(() => {
+  console.log('Discordログイン成功');
+}).catch((err) => {
+  console.error('Discordログイン失敗:', err);
 });
+
 
 // キーワードと転送先チャンネル名を対応付けるマップ
 const keywordsToChannels = {
