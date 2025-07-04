@@ -6,7 +6,7 @@ const client = new Client({
   ]
 });
 
-console.log('Bot起動処理開始');
+console.log('code.js処理開始');
 
 client.login(process.env.DISCORD_BOT_TOKEN).catch(err => {
   console.error('Discordログインエラー:', err);
@@ -32,9 +32,13 @@ const keywordsToChannels = {
 // 書き込み用チャンネル名
 const sourceChannelName = "遅刻・欠勤連絡（書き込み用）";
 
+console.log('Bot起動処理');
+
 client.on("ready", () => {
 console.log(`Bot準備完了！ ${client.user.tag} でログインしています。`);
 });
+
+console.log('Log1');
 
 // メッセージ作成時の処理
 client.on("messageCreate", async (message) => {
@@ -54,6 +58,8 @@ if (newMessage.author.bot) return; // ボットやシステムメッセージを
   }
 });
 
+console.log('Log2');
+
 // メッセージを処理する共通関数
 async function handleMessage(message) {
 if (message.channel.name === sourceChannelName) {
@@ -67,6 +73,8 @@ const targetChannel = message.guild.channels.cache.find(
 (channel) => channel.name === targetChannelName
 );
 
+console.log('Log3');
+  
 if (targetChannel) {
 // 転送
 await targetChannel.send(message.content);
@@ -87,4 +95,5 @@ break; // 一致した時点で後続チェックを停止
 }
 }
 
+console.log('Log4');
 client.login(process.env.DISCORD_BOT_TOKEN);
