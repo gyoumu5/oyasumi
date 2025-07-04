@@ -8,11 +8,6 @@ const client = new Client({
 
 console.log('code.js処理開始');
 
-client.login(process.env.DISCORD_BOT_TOKEN).then(() => {
-  console.log('Discordログイン成功');
-}).catch((err) => {
-  console.error('Discordログイン失敗:', err);
-});
 
 
 // キーワードと転送先チャンネル名を対応付けるマップ
@@ -99,4 +94,9 @@ break; // 一致した時点で後続チェックを停止
 }
 
 console.log('Log4');
-client.login(process.env.DISCORD_BOT_TOKEN);
+
+client.login(process.env.DISCORD_BOT_TOKEN).then(() => {
+  console.log('Discordログイン成功');
+}).catch((err) => {
+  console.error('Discordログイン失敗:', err);
+});
