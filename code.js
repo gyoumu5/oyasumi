@@ -97,11 +97,18 @@ break; // 一致した時点で後続チェックを停止
 }
 */
 console.log('Log4');
+console.log("✅ BOT TOKENの長さ:", process.env.DISCORD_BOT_TOKEN?.length);
 
 (async () => {
   try {
     console.log('🔄 Discordログイン処理開始');
-    await client.login(process.env.DISCORD_BOT_TOKEN);
+    const token = process.env.DISCORD_BOT_TOKEN;
+
+    if (!token || token.length < 10) {
+      throw new Error("❌ トークンが短すぎるか未設定");
+    }
+
+    await client.login(token);
     console.log(`✅ Discordログイン成功: ${client.user.tag}`);
   } catch (err) {
     console.error('❌ Discordログイン失敗:', err);
