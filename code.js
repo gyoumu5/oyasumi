@@ -6,6 +6,8 @@ const client = new Client({
   ]
 });
 
+console.log("DISCORD_BOT_TOKEN:", process.env.DISCORD_BOT_TOKEN);
+
 console.log('code.js処理開始');
 
 
