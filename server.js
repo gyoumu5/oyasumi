@@ -37,7 +37,8 @@ console.log(`process.env.PORT=${process.env.PORT}, Use PORT=${PORT}`);
 
 if (!process.env.DISCORD_BOT_TOKEN) {
   console.log("DISCORD_BOT_TOKENを設定してください。");
-  process.exit(0);
+  //process.exit(0);
+  return; // 処理を止めるだけでプロセスは残る
 }
 
 require("./code.js");
