@@ -39,7 +39,7 @@ console.log(`Bot準備完了！ ${client.user.tag} でログインしていま�
 });
 
 console.log('Log1');
-
+/*
 // メッセージ作成時の処理
 client.on("messageCreate", async (message) => {
 if (message.author.bot) return; // ボットやシステムメッセージを無視
@@ -94,7 +94,7 @@ break; // 一致した時点で後続チェックを停止
 }
 }
 }
-
+*/
 console.log('Log4');
 
 client.login(process.env.DISCORD_BOT_TOKEN).then(() => {
