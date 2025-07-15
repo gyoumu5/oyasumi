@@ -83,14 +83,15 @@ const targetChannel = message.guild.channels.cache.find(
 console.log('Log3');
   
 if (targetChannel) {
-// 転送
-await targetChannel.send(message.content);
-console.log(
-`キーワード "${keyword}" に反応して、メッセージを "${targetChannelName}" に転送しました。`
-);
+  // 転送
+  await targetChannel.send(message.content);
+  console.log(`キーワード "${keyword}" に反応して、メッセージを "${targetChannelName}" に転送しました。`);
 
-// 転送元のメッセージにリアクションを付ける (白い花絵文字)
-await message.react("🍟");
+  // 転送後に1秒待つ（1000ミリ秒）
+  await new Promise(resolve => setTimeout(resolve, 1000));
+
+  // 転送元メッセージにリアクションを付ける
+  await message.react("🍟");
 } else {
 console.error(
 `転送先チャンネル "${targetChannelName}" が見つかりませんでした。`
