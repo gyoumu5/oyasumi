@@ -88,7 +88,7 @@ if (targetChannel) {
   console.log(`キーワード "${keyword}" に反応して、メッセージを "${targetChannelName}" に転送しました。`);
 
   // 転送後に1秒待つ（1000ミリ秒）
-  await new Promise(resolve => setTimeout(resolve, 1000));
+  await new Promise(resolve => setTimeout(resolve, 2000));
 
   // 転送元メッセージにリアクションを付ける
   await message.react("🍟");
